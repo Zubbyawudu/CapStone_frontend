@@ -23,6 +23,7 @@ export default function CarDetail() {
             if (!response.ok) {
                 throw new Error(`Error: ${response.status} ${response.statusText}`)
             }
+            alert("Car deleted successfully!")
             navigate('/')
         }
         catch (err) {   

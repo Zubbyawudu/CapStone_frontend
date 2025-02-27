@@ -69,7 +69,7 @@ useEffect(() => {
       });
 
       if (response.ok) {
-        setMessage('Car updated successfully!');
+        alert('Car updated successfully!');
         navigate(-1)
       
       } else {

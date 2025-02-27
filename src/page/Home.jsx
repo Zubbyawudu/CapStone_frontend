@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import useFetch from "../api/fetch";
 
 export default function Home() {
-    const { data, loading, error } = useFetch<{ title: string }>(
+    const { data, loading, error } = useFetch(
         "http://localhost:5000/api/cars/"
-    ) as { data: { title: string, _id: string,make:string, model:string, price:number,location:string,mileage:string }[]; loading: boolean; error: string | null };
+    ) ;
 
     return (
         <>
